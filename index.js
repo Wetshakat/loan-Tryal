@@ -4,7 +4,7 @@ let Bank = {
     generateAccountNumber: function () {
         let accountNumber;
         do {
-            accountNumber = "024" + Math.floor(10000000 + Math.random() * 90000000);
+            accountNumber = "02" + Math.floor(10000000 + Math.random() * 10);
         } while (this.users.some(user => user.accountNumber === accountNumber));
         return accountNumber;
     },
